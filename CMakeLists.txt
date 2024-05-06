@@ -40,6 +40,9 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${layer_directory})
 
 set(CMAKE_CXX_STANDARD 17)
 
+#allow compilation for android
+include("android.cmake")
+
 #some platform specific twidling of filenames and path conventions
 if(WIN32)
 	set(library_filename "${library_name}.dll")
@@ -64,6 +67,7 @@ configure_file(
 file(GLOB layer_src CONFIGURE_DEPENDS src/*)
 
 add_library(${library_name} SHARED ${layer_src} ${CMAKE_SOURCE_DIR}/README.md)
+#add_library(${library_name} STATIC ${layer_src} ${CMAKE_SOURCE_DIR}/README.md)
 
 if(WIN32)
 	set_target_properties(${library_name} PROPERTIES PREFIX "")

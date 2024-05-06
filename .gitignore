@@ -432,3 +432,5 @@ BeatSaberVersion.txt
 
 # Large files
 traces/20240118-m-replay-d-mq2-a-azsq-l-16-i-1/
+apkmodder/my-release-key.keystore
+*.apk

@@ -9,3 +9,4 @@ set(CMAKE_ANDROID_ARCH_ABI arm64-v8a)
 # To make this work, CMake needs to know where to find the android NDK
 set(CMAKE_ANDROID_NDK /usr/lib/android-ndk)
 set(CMAKE_ANDROID_STL_TYPE c++_static)
+message(STATUS "android enabled")

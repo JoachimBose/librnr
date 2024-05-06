@@ -55,6 +55,10 @@ To replay a trace, set the library mode to REPLAY in the `ListShims` function in
 A trace will now automatically be played back when you start an OpenXR application.
 When the trace ends, control is returned to the physical controllers.
 
+### Android additions
+
+Check out the android tooling at [./apkmodder/README.md](apkmodder/README.md)
+
 ## Trace Format
 
 The library creates a plain-text trace where every line corresponds to a record.

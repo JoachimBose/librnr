@@ -680,7 +680,7 @@ XRAPI_ATTR XrResult XRAPI_CALL thisLayer_xrTestMeTEST(XrSession session)
 // This functions returns the list of function pointers and name we implement, and is called during the initialization of the layer:
 std::vector<OpenXRLayer::ShimFunction> ListShims() {
     // TODO move this to another function. Does not belong here.
-    mode = tracer::init();
+    mode = tracer::RECORD;
 
     std::vector<OpenXRLayer::ShimFunction> functions;
     functions.emplace_back("xrDestroyInstance", PFN_xrVoidFunction(thisLayer_xrDestroyInstance));

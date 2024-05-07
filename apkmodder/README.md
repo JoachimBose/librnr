@@ -15,3 +15,4 @@ So far, this is what has been done:
  * The APK has been correctly repacked and resigned and installs on a phone using
 some opencraft-2 headset build apk
  * The APK has not yet been tested or installed on MQ3
+ * librnr.so does not get properly dynamically loaded and linked
